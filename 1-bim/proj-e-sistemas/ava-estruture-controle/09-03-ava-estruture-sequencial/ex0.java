@@ -3,16 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication1;
+package javaava;
 
 import java.text.DecimalFormat;
-import java.util.Scanner;
 
 /**
  *
- * @author 06792799114
+ * @author 06189573240
  */
-public class JavaApplication1 {
+public class JavaAva {
 
     /**
      * @param args the command line arguments
@@ -20,9 +19,11 @@ public class JavaApplication1 {
     public static void main(String[] args) {
         String produto1 = "Computador";
         String produto2 = "Mesa de trabalho";
+
         int idade = 30;
         int codigo = 5290;
         char genero = 'F';
+        
         Double preco1 = 2100.0;
         Double preco2 = 650.50;
         Double medida = 53.234567;
