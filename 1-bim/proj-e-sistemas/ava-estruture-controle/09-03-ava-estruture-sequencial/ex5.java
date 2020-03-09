@@ -3,17 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaava;
 
 import java.text.DecimalFormat;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
  *
  * @author 06189573240
  */
-public class JavaAva {
+public class Main {
 
     /**
      * @param args the command line arguments
@@ -21,23 +19,30 @@ public class JavaAva {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
+        Compra compra1 = new Compra(scan.next(), scan.next(), scan.next());
+        double subtotal1 = compra1.subtotal();
         
-        String peca1Data = scan.next();
-        String peca2Data = scan.next();
+        Compra compra2 = new Compra(scan.next(), scan.next(), scan.next());
+        double subtotal2 = compra2.subtotal();
         
-        String[] peca1 = peca1Data.split(" ");
-        
-        System.out.println(peca1[1]);
-        /*
-        int cod = scan.nextInt();
-        double valorPeca = scan.nextDouble();
-        int qtdPecas = scan.nextInt();
-
-        double subTotal = valorPeca * qtdPecas;
+        double total = subtotal1 + subtotal2;
 
         DecimalFormat df = new DecimalFormat("0.##");
+        System.out.println("VALOR A PAGAR = U$ " + df.format(total));
+    }
+}
 
-        System.out.println("VALOR A PAGAR = U$ " + df.format(subTotal));
-        */
+class Compra {
+    int cod;
+    double valorPeca;
+    int qtdPecas;
+    
+    public Compra(String codigo, String quantidadeDePecas,String valorPorPeca){
+        cod = Integer.parseInt(codigo);
+        qtdPecas = Integer.parseInt(quantidadeDePecas);
+        valorPeca = Double.parseDouble(valorPorPeca);
+    }
+    public double subtotal(){
+        return valorPeca * qtdPecas;
     }
 }
