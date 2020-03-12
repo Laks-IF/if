@@ -16,8 +16,21 @@ OBS: (Crie o passo a passo)
 3. Alicate Crimpador (fig.3)
 5. Lâmina para desencapar o fio
 
-- #### Montando a parte física
-1. Descasque o cabo (fig.X)
+![fig.1](./cabo-utp.jpg)
+Fig.1
+![fig.2](./rj.jpg)
+Fig.2
+![fig.3](./alicate.jpg)
+Fig.3
+
+- ##### Montando a parte física
+1. Descasque o cabo, e deixe aproximadamente 2,5cm de fio desencapado, e você verá 4 cabos, cada cabo composto por 2 fios trançados (fig.4)
+2.  Organize os fios usando um dos padrões da figura 5 (fig.5)
+Fig.4
+![fig.4](./cabo-descascado.jpg)
+Fig.5
+![fig.4](./cabo-padroes.gif)
+
 - ##### Passo a passo
 1. ![cabo](./cabo.jpg)
 2. 
