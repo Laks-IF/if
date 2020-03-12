@@ -7,7 +7,7 @@ Segue a atividade:
 
 OBS: (Crie o passo a passo)
 
-## Respostas
+## Resposta
 
 ### Questão 1:
 - ##### Material Necessário
