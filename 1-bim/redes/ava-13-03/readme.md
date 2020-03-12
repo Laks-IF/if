@@ -11,14 +11,24 @@ OBS: (Crie o passo a passo)
 
 ### Questão 1:
 - ##### Material Necessário
-1. Para compartilhar um arquivo, primeiro abrimos o explorador de arquivo
+1. Cabo UTP ou STP
+2. 2 Conectores RJ45
+3. Alicate Crimpador
+4. Lâmina para corte do fio
+5. Lâmina para desencapar o fio
+6. Fenda para crimpar o conector
+
+- ##### Passo a passo
+1. ![cabo](./cabo.jpg)
+2. 
+3. 
+4. Para compartilhar um arquivo, primeiro abrimos o explorador de arquivo
 2. Em seguida escolhemos a pasta ou arquivo que queremos compartilhar
 3. Clicamos com o botão direito do mouse em cima do arquivo ou pasta
 4. Selecionamos a opção "conceder acesso à"
 5. Logo, escolhemos as máquinas que desejamos compartilhar os arquivos ou pastas
 6. Completo, agora os arquivos ou pastas escolhidas estão disponíveis para todas as máquinas que você selecionou.
 
-- ##### Passo a passo
-1. 
 ### Questão 2
+
 
