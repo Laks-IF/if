@@ -11,13 +11,13 @@ OBS: (Crie o passo a passo)
 
 ### Questão 1:
 - ##### Material Necessário
-1. Cabo UTP ou STP
-2. 2 Conectores RJ45
-3. Alicate Crimpador
-4. Lâmina para corte do fio
+1. Cabo UTP ou STP (fig.1)
+2. 2 Conectores RJ45 (fig.2)
+3. Alicate Crimpador (fig.3)
 5. Lâmina para desencapar o fio
-6. Fenda para crimpar o conector
 
+- #### Montando a parte física
+1. Descasque o cabo (fig.X)
 - ##### Passo a passo
 1. ![cabo](./cabo.jpg)
 2. 
