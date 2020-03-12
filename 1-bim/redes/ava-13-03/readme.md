@@ -26,15 +26,14 @@ Fig.3
 - ##### Montando a parte física
 1. Descasque o cabo, e deixe aproximadamente 2,5cm de fio desencapado, e você verá 4 cabos, cada cabo composto por 2 fios trançados (fig.4)
 2.  Organize os fios usando um dos padrões da figura 5 (fig.5)
-Fig.4
-![fig.4](./cabo-descascado.jpg)
-Fig.5
-![fig.4](./cabo-padroes.gif)
+3. Conecte o conector RJ e use o alicate para 
 
+![fig.4](./cabo.jpg)
+Fig.4
+![fig.5](./cabo-padroes.gif)
+Fig.5
 - ##### Passo a passo
-1. ![cabo](./cabo.jpg)
-2. 
-3. 
+
 4. Para compartilhar um arquivo, primeiro abrimos o explorador de arquivo
 2. Em seguida escolhemos a pasta ou arquivo que queremos compartilhar
 3. Clicamos com o botão direito do mouse em cima do arquivo ou pasta
