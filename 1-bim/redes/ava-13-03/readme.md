@@ -108,5 +108,5 @@ computador à rede para compartilhar documentos
 (Fig.5)
 
 ### Referências
-https://www.youtube.com/watch?v=bLeHmcPdNsc
-https://www.clubedohardware.com.br/forums/topic/276798-tutorial-montando-e-configurando-uma-rede-ponto-%C3%A0-ponto/
+- https://www.youtube.com/watch?v=bLeHmcPdNsc
+- https://www.clubedohardware.com.br/forums/topic/276798-tutorial-montando-e-configurando-uma-rede-ponto-%C3%A0-ponto/
