@@ -95,11 +95,12 @@ computador à rede para compartilhar documentos
 1. Descasque o cabo, e deixe aproximadamente 2,5cm de fio desencapado, e você verá 4 cabos, cada cabo composto por 2 fios trançados (fig.4)
 2. Organize os fios usando um dos padrões da figura 5 (fig.5)
 3. "Organize": se refere a dividir cada fio
-4. Coloque-os em ordem usando o padrão A ou B da figura 5 (segure no ponto de onde você descascou para o fio não desarrumar novamente)
+4. Coloque-os em ordem usando o padrão A (Depois, para a outra ponta, faça este mesmo processo usando o padrão B, a ideia é estar com o cabo com uma ponta no padrão A e outra ponta no padrão B). Os padrões estão na figura 5 (na hora de montar, lembre-se de segurar no ponto de onde você descascou para o fio não desarrumar novamente)
 5. Use a unha para deixá-los na ordem correta e retos
 6. Use um pequeno alicate e corte-os a deixar aproximadamente 30cm de cabo desencapado para fora
 7. Em seguida encaixe estes no conector RJ45
 8. Use o alicate para unir o conector aos fios/cabos
+9. Repita o processo para a outra ponta (Lembre-se de usar o outro padrão, o que não foi usado desta vez)
 
 ![fig.4](./assets/cabo.jpg)
 (Fig.4)
