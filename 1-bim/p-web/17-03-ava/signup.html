@@ -11,10 +11,136 @@
 </head>
 
 <body>
-    <a href="contact.html">Go to contact page</a>
-    <img style="max-width: 100%; border-radius: 100%" src="./assets/imagem.webp" alt="Imagem de Teste 1">
-    <img style="max-width: 100%" src="https://c.wallhere.com/images/c1/7e/71603f1a72495948a187644e671c-1562447.jpg!d"
-        alt="Imagem de Teste 2">
+
+    <a href="index.html">HOME</a>
+    &bull;
+    <a href="products.html">PRODUTOS</a>
+    &bull;
+    <a href="signup.html">CADASTRE-SE</a>
+    &bull;
+    <a href="contact.html">CONTATO</a>
+    &bull;
+    <a href="about.html">QUEM SOMOS</a>
+    &bull;
+    <a href="login.html">ENTRAR</a>
+
+    <main>
+        <form id="signup-form" action="#">
+            <fieldset>
+                <legend>Preencha os campos</legend>
+                <p>
+                    <div class="field">
+                        <div class="label-field">
+                            <label for="name">Nome:</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="name" type="text" placeholder="Nome...">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="label-field">
+                            <label for="second-name">Sobrenome:</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="second-name" type="text" placeholder="Sobrenome...">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="label-field">
+                            <label for="cpf">CPF:</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="cpf" type="text" placeholder="CPF...">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="label-field">
+                            <label for="rg">RG:</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="rg" type="text" placeholder="RG...">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="label-field">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="email" type="email" placeholder="Email...">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="label-field">
+                            <label for="password">Senha:</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="password" type="password" placeholder="Senha...">
+                        </div>
+                    </div>
+
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Sexo:</legend>
+                <p>
+                    <div class="field">
+                        <input id="masc" type="radio">
+                        <label for="masc">Masculino</label>
+                    </div>
+                    <div class="field">
+                        <input id="fem" type="radio">
+                        <label for="fem">Masculino</label>
+                    </div>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Interesses:</legend>
+                <p>
+                    <div class="field">
+                        <input id="telev" type="checkbox">
+                        <label for="telev">Televisão</label>
+                    </div>
+                    <div class="field">
+                        <input id="fut" type="checkbox">
+                        <label for="fut">Futebol</label>
+                    </div>
+                    <div class="field">
+                        <input id="cine" type="checkbox">
+                        <label for="cine">Cinema</label>
+                    </div>
+                    <div class="field">
+                        <input id="moda" type="checkbox">
+                        <label for="moda">Moda</label>
+                    </div>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Selectione seu estado:</legend>
+                <p>
+                    <div class="field">
+                        <label for="location">Estado</label>
+                        <select id="location" name="location-list" form="signup-form">
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SP">SP</option>
+                            <option value="RJ">RJ</option>
+                        </select>
+                    </div>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Observações:</legend>
+                <p>
+                    <textarea name="obs" id="obs" cols="30" rows="5"></textarea>
+                </p>
+            </fieldset>
+
+
+            <button type="submit">CADASTRAR</button>
+        </form>
+    </main>
 </body>
 
 </html>
