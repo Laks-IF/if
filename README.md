@@ -1,4 +1,6 @@
-### _Se você é da minha turma:_
-Seja feliz a abra as soluções, vai pelo bimestre, matéria técnica, atividade, aí só copiar, mudar o nome das var, e enviar
-### _Se você é meu professor:_
-A mensagem acima é brincadeira, ahsuhaushhasua
+<p align="center">
+  <img width="250" src="https://s1.static.brasilescola.uol.com.br/be/vestibular/-59dbcd8ec1476.jpg">
+</p>
+
+### Instituto Federal de Rondônia
+Este é um simples repositório que contém códigos e trabalhos codados/feitos em sala de aula
