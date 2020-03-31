@@ -30,5 +30,8 @@ estudos!!
   
 3) Pós e Contras do cabo par trançado
 - Vantagens
-1. 
+1. Maior taxa de transferência de arquivos, ou seja, maior velocidade na hora de copiar/colar/enviar/receber arquivos, seja qual for ele
+2. Baixo custo
+3. Baixa manutenção
+4. Flexibilidade, é possível dobrar estes fios na hora de montar o sistema de redes
   
