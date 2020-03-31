@@ -66,3 +66,10 @@ _**9)**_ Vantagens da Fibra Óptica
 - Baixa atenuação de sinal - Diferente de outros cabos, essa fibra tem perda mínima, perdendo somente 0,2 dB/km (0,2 decibeis – unidade de intensidade da energia carregada pela onda)  
 - Custo - São mais baratos que os cabos condutores de cobre  
 - Espaço - Por causa da sua taxa de transferência de dados, os cabos de fibra óptica ocupam espaços muito menores do que os cabos convencionais  
+
+_**10)**_ Conectores da Fibra Óptica:
+- ST
+- SC 
+- FC
+- FDDI
+
