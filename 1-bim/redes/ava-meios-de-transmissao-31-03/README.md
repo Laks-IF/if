@@ -56,3 +56,4 @@ _**6)**_
   - Permite o uso de redes com transmissão banda larga
   - Melhor imunidade contra ruídos e contra atenuação de sinal comparado ao par trançado sem blindagem
 
+_**7)**_ As fibras óticas são filamentos dobráveis, flexíveis fabricados em materiais transparentes como fibras de vidro ou plástico. Essas fibras são geralmente muito finas, com apenas alguns micrômetros de espessura (10 - 6m), mas podem ter vários quilômetros de comprimento
