@@ -72,4 +72,5 @@ _**10)**_ Conectores da Fibra Óptica:
 - SC 
 - FC
 - FDDI
-
+- LC
+- MTRJ
