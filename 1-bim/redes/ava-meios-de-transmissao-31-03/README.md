@@ -16,3 +16,8 @@ Orientações: Resolva o questionário, produzindo um arquivo PDF ou editável c
 estudos!!
 
 ## Respostas
+
+1) Os cabos de transmissão guiados são:
+  - Par trançado
+  - Cabo Coaxial
+  - Fibra óptica
