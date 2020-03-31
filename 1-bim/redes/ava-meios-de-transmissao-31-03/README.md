@@ -30,9 +30,12 @@ _**2)**_ Os cabos par trançado são:
   
 _**3)**_ Pós e Contras do cabo par trançado
   - Vantagens
-1. Maior taxa de transferência de arquivos, ou seja, maior velocidade na hora de copiar/colar/enviar/receber arquivos, seja qual for ele
-2. Baixo custo
-3. Baixa manutenção
-4. Flexibilidade, é possível dobrar estes fios na hora de montar o sistema de redes
-  
+    1. Maior taxa de transferência de arquivos, ou seja, maior velocidade na hora de copiar/colar/enviar/receber arquivos, seja qual for ele
+    2. Baixo custo
+    3. Baixa manutenção
+    4. Flexibilidade, é possível dobrar estes fios na hora de montar o sistema de redes
+  - Desvantagens
+    1. Comprimento de no máximo 100 metros.
+    2. Baixa imunidade a interferência externas.
+
 _**4)**_ O cabo crossover deve ter uma ponta no padrão EIA/TIA 568A [Veja a imagem](https://www.infowester.com/img_art/tutcabo_7.jpg)
