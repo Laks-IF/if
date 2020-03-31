@@ -38,7 +38,16 @@ _**3)**_ Pós e Contras do cabo par trançado
     1. Comprimento de no máximo 100 metros.
     2. Baixa imunidade a interferência externas.
 
-_**4)**_ 
+_**4)**_ As seguintes categorias:
+  - Cat.7a
+    - F/FTP
+    - S/FTP
+  - Cat.8.1
+    - U/FTP
+    - F/UTP
+  - Cat.8.2
+    - F/FTP
+    - S/FTP
 
 _**5)**_ O cabo crossover deve ter uma ponta no padrão EIA/TIA 568A [Veja a imagem](https://www.infowester.com/img_art/tutcabo_7.jpg)
 
