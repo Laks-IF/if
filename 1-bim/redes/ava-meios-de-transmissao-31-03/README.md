@@ -21,3 +21,14 @@ estudos!!
   - Par trançado
   - Cabo Coaxial
   - Fibra óptica
+
+2) Os cabos par trançado são:
+  - Tem pares de fios entrelaçados um no do outro a fim de cancelar as interferências eletromagnéticas
+  - É o cabo de rede mais utilizado
+  - Podem (UTP) ou não (STP) possuir blindagem 
+  - São comumente usados como cabos de rede
+  
+3) Pós e Contras do cabo par trançado
+- Vantagens
+1. 
+  
