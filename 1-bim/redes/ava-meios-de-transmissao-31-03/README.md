@@ -51,3 +51,8 @@ _**4)**_ As seguintes categorias:
 
 _**5)**_ O cabo crossover deve ter uma ponta no padrão EIA/TIA 568A [Veja a imagem](https://www.infowester.com/img_art/tutcabo_7.jpg)
 
+_**6)**_
+  - Alto alcance, por causa de sua blindagem, pode em cerca 185 metros
+  - Permite o uso de redes com transmissão banda larga
+  - Melhor imunidade contra ruídos e contra atenuação de sinal comparado ao par trançado sem blindagem
+
