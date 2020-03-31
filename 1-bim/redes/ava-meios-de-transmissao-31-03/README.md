@@ -60,10 +60,9 @@ _**7)**_ As fibras óticas são filamentos dobráveis, flexíveis fabricados em 
 
 _**8)**_ Patch Panel são basicamente painéis onde se concentram cabos que vem das tomadas, com a finalidade de organizá-los, ou seja, ao invés de todos os cabos irem diretamente para a central (Um Hub, por exemplo), eles são conectados aos Patch Panel's que separam os cabos por categorias e divisões
   
-_**9)**_ Vantagens da Fibra Óptica
-    1. Velocidade de transmissão - Essas Fibras são capaz de transmitir até capaz 40 Gbit/s (Gigabits por segundo – 10^9 bits/s)
-    2. Resistência a interferências eletromagnéticas - Por usar a luz como meio de transmissão de dados, as ondas eletromagnéticas não afetam estas fibras
-    3. Baixa atenuação de sinal - Diferente de outros cabos, essa fibra tem perda mínima, perdendo somente 0,2 dB/km (0,2
-decibeis – unidade de intensidade da energia carregada pela onda)
-    4. Custo - São mais baratos que os cabos condutores de cobre
-    5. Espaço - Por causa da sua taxa de transferência de dados, os cabos de fibra óptica ocupam espaços muito menores do que os cabos convencionais
+_**9)**_ Vantagens da Fibra Óptica  
+    - Velocidade de transmissão - Essas Fibras são capaz de transmitir até capaz 40 Gbit/s (Gigabits por segundo – 10^9 bits/s)  
+    - Resistência a interferências eletromagnéticas - Por usar a luz como meio de transmissão de dados, as ondas eletromagnéticas não afetam estas fibras  
+    - Baixa atenuação de sinal - Diferente de outros cabos, essa fibra tem perda mínima, perdendo somente 0,2 dB/km (0,2 decibeis – unidade de intensidade da energia carregada pela onda)  
+    - Custo - São mais baratos que os cabos condutores de cobre  
+    - Espaço - Por causa da sua taxa de transferência de dados, os cabos de fibra óptica ocupam espaços muito menores do que os cabos convencionais  
