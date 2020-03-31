@@ -35,3 +35,4 @@ estudos!!
 3. Baixa manutenção
 4. Flexibilidade, é possível dobrar estes fios na hora de montar o sistema de redes
   
+4) O cabo crossover deve ter uma ponta no padrão EIA/TIA 568A [Veja a imagem](https://www.infowester.com/img_art/tutcabo_7.jpg)
