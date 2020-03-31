@@ -17,22 +17,22 @@ estudos!!
 
 ## Respostas
 
-1) Os cabos de transmissão guiados são:
+_**1)**_ Os cabos de transmissão guiados são:
   - Par trançado
   - Cabo Coaxial
   - Fibra óptica
 
-2) Os cabos par trançado são:
+_**2)**_ Os cabos par trançado são:
   - Tem pares de fios entrelaçados um no do outro a fim de cancelar as interferências eletromagnéticas
   - É o cabo de rede mais utilizado
   - Podem (UTP) ou não (STP) possuir blindagem 
   - São comumente usados como cabos de rede
   
-3) Pós e Contras do cabo par trançado
-- Vantagens
+_**3)**_ Pós e Contras do cabo par trançado
+  - Vantagens
 1. Maior taxa de transferência de arquivos, ou seja, maior velocidade na hora de copiar/colar/enviar/receber arquivos, seja qual for ele
 2. Baixo custo
 3. Baixa manutenção
 4. Flexibilidade, é possível dobrar estes fios na hora de montar o sistema de redes
   
-4) O cabo crossover deve ter uma ponta no padrão EIA/TIA 568A [Veja a imagem](https://www.infowester.com/img_art/tutcabo_7.jpg)
+_**4)**_ O cabo crossover deve ter uma ponta no padrão EIA/TIA 568A [Veja a imagem](https://www.infowester.com/img_art/tutcabo_7.jpg)
