@@ -18,6 +18,6 @@ Qualquer dúvida estou a disposição, abraços.
 
 
 ## Arquivos
-A pasta com o HTML usando CSS Inline [pode ser encontrado aqui](/css-inline)
-A pasta com o HTML usando CSS Internal [pode ser encontrado aqui](/css-internal)
-A pasta com o HTML usando CSS Externo [pode ser encontrado aqui](/css-external)
+A pasta com o HTML usando CSS Inline [pode ser encontrado aqui](/css-inline)  
+A pasta com o HTML usando CSS Internal [pode ser encontrado aqui](/css-internal)  
+A pasta com o HTML usando CSS Externo [pode ser encontrado aqui](/css-external)  
