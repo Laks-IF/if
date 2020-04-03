@@ -4,4 +4,4 @@
 3. Pautado na leitura o que é inteligência financeira.
 
 ### RESPOSTAS:
-1. Venda, administração, entendimento de organização, venda não se limitando apenas à bens e produtos, mas incluindo também ideias
+1. Venda, administração, entendimento de organização, venda não se limitando apenas à bens e produtos, mas incluindo também ideias. Sabendo disso, habilidade de comunicação também se inclui automaticamente
