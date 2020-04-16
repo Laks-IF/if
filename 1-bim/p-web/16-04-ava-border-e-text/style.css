@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color: #f5f8f5;
+}
+
+html, body, #app {
+    width: 100%;
+    height: 100%;
+    background: #020402;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+}
+
+#app * {
+    background: #343434;
+    padding: 1rem;
+}
+
+.styles__title {
+    color: var(--color);
+}
