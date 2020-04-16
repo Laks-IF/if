@@ -9,9 +9,6 @@
     <!-- Set Title -->
     <title>Ava - Border e Formação de Texto</title>
 
-    <!-- Load Font -->
-    <link rel="preload" href="fonts/cicle_fina-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-
     <!-- Load Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,15 +16,119 @@
 <body>
     <!-- HTML Application -->
     <main id="app">
-        <section class="styles">
-            <h1 class="styles__title">Formatação de texto</h1>
-            <h1 class="styles__title">Estilos de borda</h1>
-        </section>
-        <section class="result"></section>
     </main>
 
+    <!-- Button to Generate More Borders -->
+    <button id="generate">Gerar mais bordas</button>
+
     <!-- Load Script -->
-    <script type="module" src="main.js"></script>
+    <script type="text/javascript">
+        const app = document.getElementById("app");
+
+        const styleEnum = [
+            "none",
+            "hidden",
+            "dotted",
+            "dashed",
+            "solid",
+            "double",
+            "groove",
+            "ridge",
+            "inset",
+            "outset",
+        ]
+        const fonts = [
+            "Arial",
+            "Helvetica",
+            "Times New Roman",
+            "Times",
+            "Courier New",
+            "Courier",
+            "Palatino",
+            "Garamond",
+            "Bookman",
+            "Avant Garde",
+            "Verdana",
+            "Georgia",
+            "Comic Sans",
+            "Trebuchet",
+            "Arial Black",
+            "Impact"
+        ]
+        const text = "Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. "
+
+        function generateBorders() {
+            Array.from({ length: random(50, 150) }).forEach(() => {
+                const box = createBox();
+
+                box.style.borderWidth = random(1, 50) + "px";
+                box.style.borderStyle = styleEnum[random(0, styleEnum.length - 1)];
+                box.style.borderColor = color().string;
+                box.style.background = color({ a: [0.1, 0.3] }).string;
+                box.style.fontSize = random(8, 36) + "px";
+                box.style.borderRadius = `${random(0, 50)}% ${random(0, 50)}% ${random(0, 50)}% ${random(0, 50)}%`;
+                box.style.fontFamily = `${fonts[random(0, fonts.length - 1)]}, sans-serif`
+                box.style.textDecoration = `
+                    ${["underline", "overline", "line-through"][random(0, 2)]} 
+                    ${color().string}
+                    ${["solid", "wavy", "dotted", "dashed", "double"][random(0, 4)]}
+                `
+                box.style.color = color({ r: [0, 120], g: [0, 120], b: [0, 120] }).string;
+                box.style.textTransform = `${["uppercase", "lowercase", "none"][random(0, 2)]}`
+                box.textContent = [
+                    text,
+                    Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+                ][random(0, 1)];
+
+                app.appendChild(box);
+            });
+        }
+
+        function createBox() {
+            const box = document.createElement("div");
+            box.classList.add("box");
+            return box;
+        }
+
+        function random(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        function color(userConfig = {}) {
+            const defaultConfig = {
+                r: [0, 255],
+                g: [0, 255],
+                b: [0, 255],
+                a: [1, 1],
+            }
+            const config = Object.assign({}, defaultConfig, userConfig);
+
+            let { r, g, b, a } = config;
+
+            let [minR, maxR] = r;
+            let [minG, maxG] = g;
+            let [minB, maxB] = b;
+            let [minA, maxA] = a;
+
+            maxA *= 1000;
+            minA *= 1000;
+
+            r = random(minR, maxR);
+            g = random(minG, maxG);
+            b = random(minB, maxB);
+            a = random(minA, maxA) / 1000;
+
+            return {
+                string: `rgba(${r}, ${g}, ${b}, ${a})`,
+                color: {
+                    r, g, b, a
+                }
+            };
+        }
+        generateBorders();
+
+        document.getElementById("generate").onclick = generateBorders;
+    </script>
 </body>
 
 </html>
