@@ -19,3 +19,7 @@ Respostas:
 
 2) Serviços de rede são ferramentas que carregam em segundo plano/background no computador, e fornecem funcionalidades para rede interna e externa, exemplo de alguns serviços de rede: o Apache (HTTP), Samba (FTP) e Squid (Proxy). E é exatamente aí que está o parelelo entre os serviços de rede e os protocolos, a comunicação entre as máquinas são feitas através de protocolos, atualmente, principalmente o HTTP e HTTPS (É o mesmo que HTTP só que com uma camada de extra de segurança), e os serviços de rede são os caras que irão tornar possível a utilização desse protocolo X para se comunicar.
 
+3) Depende do que significa "ficar atualizado", caso "ficar atualizado" signifique estudar e tentar aprender as tecnologias mais recentes que surgem no mercado, é impossível. Tecnologias nascem do mundo inteiro, é impossível alcançar todos os lançamentos das mais recentes tecnologias para a área X, o que é possível, é se mantar atualizado de forma que, você saiba o que está acontecendo fora: quais tecnologias estão servindo para quê, qual a forma mais recente de construir algo (sem se aprofundar, você tem conhecimento, basta entender a ideia), portanto, saiba o que está acontecendo, sem precisar gastar dias tentando estudar algo, lembre-se, o seu tempo é precioso, logo, "se manter atualizado" na área de TI, eu considero acompanhar tecnologias (pelo Github, Gitlab, GameJam's, Twitter, Youtube, e etc), porém, filtrar o que lhe é útil, e renderá melhoria de vida em algum aspecto.
+
+4) 
+
