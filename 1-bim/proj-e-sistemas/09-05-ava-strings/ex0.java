@@ -32,6 +32,7 @@ public class Main
 	}
 }
 
+// Class created for this exercise
 class BasicStringHandler 
 {
     public static String toLowerCase(String target){
