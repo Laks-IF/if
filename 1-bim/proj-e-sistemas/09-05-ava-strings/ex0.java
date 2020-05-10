@@ -8,7 +8,9 @@ public class Main
 		// Note: the BasicStringHandler class dont modify original target string
 		BasicStringHandler handler = new BasicStringHandler();
 		
-		// Read the String
+		// Read the String, 
+		// you can replace this with the hardcode string "UMA frase COM letras MAIÚSCULAS e minúsculas" as below:
+		// String target = "UMA frase COM letras MAIÚSCULAS e minúsculas";
 		String target = input.nextLine();
 		
 		// Use BasicStringHandler methods with native Java String Methods
