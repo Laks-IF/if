@@ -10,10 +10,9 @@ public class Main
 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-	   
-	boolean complete = false;
 	    
         System.out.println("Digite a largura e altura do retângulo:");
+	    
         double largura = input.nextDouble();
         double altura = input.nextDouble();
         	    
