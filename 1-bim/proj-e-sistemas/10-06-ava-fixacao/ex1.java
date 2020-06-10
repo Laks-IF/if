@@ -8,20 +8,21 @@ import java.util.Scanner;
 
 public class Main
 {
-	public static void main(String[] args) {
-	    Scanner input = new Scanner(System.in);
-	       
-	    boolean complete = false;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+	   
+	boolean complete = false;
 	    
         System.out.println("Digite a largura e altura do retângulo:");
         double largura = input.nextDouble();
         double altura = input.nextDouble();
         	    
         Retangulo retangulo = new Retangulo(largura, altura);
+	    
         System.out.println("AREA = " + retangulo.area());
         System.out.println("PERIMETRO = " + retangulo.perimetro());
         System.out.println("DIAGONAL = " + retangulo.diagonal());
-	}
+    }
 }
 
 class Retangulo {
@@ -42,3 +43,31 @@ class Retangulo {
         return Math.sqrt(Math.pow(this.largura, 2) + Math.pow(this.altura, 2));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
