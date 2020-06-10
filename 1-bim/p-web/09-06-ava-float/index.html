@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float, Display Inline e Block</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace, Helvetica, Arial;
+            line-height: 1.5;
+            color: rgb(100, 100, 100);
+            padding: 0;
+        }
+
+        html,
+        body {
+            margin: 0;
+        }
+
+        #content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        footer {
+            background: cadetblue
+        }
+
+        h1,
+        h3,
+        h5 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="content">
+
+        <h1>Display Block e Inline</h1>
+        <h3>A Web é um amontado de <b>caixas</b></h3>
+        <h5>Laks Castro, 3°B Informática</h5>
+        <h2>Introdução</h2>
+        <p>Então, quando criamos uma &#60;div&#62;, ou um &#60;p&#62; tudo vira uma box, uma caixa, inclusive até a tag
+            de
+            áudio e vídeo (&#60;audio&#62;, &#60;video&#62;), que por baixo dos panos da Engine do HTML5 ela se torna
+            apenas
+            um amontado de divs e spans que
+            formam o player bonitinho.</p>
+
+        <p>Portanto, a propriedade display simplesmente controla a forma com que a caixa vai se comportar no seu
+            contexto,
+            e esses dois valores "inline" e "block" permitem realizar coisas diferentes.
+        </p>
+
+        <h2>Display Block - Exemplo de Uso sozinho e com float</h2>
+        <p>O display block permite o posicionamento das caixas filhas de forma a ocupar 100% da largura do container, de
+            forma
+            estática como se fosse um bloco.</p>
+
+        <!-- Lembrando: display: block em uma div é desnecessário, 
+        pois a div por padrão já possui o display definido como block, coloquei só pra exemplificar mesmo -->
+        <div style="display: block;">
+            <!-- Coloquei um padding de 50px para ser possível visualizar o texto de forma legal -->
+            <div style="background: navy; padding: 2rem; color: white; text-align: center; font-weight: bolder;">Sou
+                Nós, display: block; existimos para permitir que caixas sejam colocadas em baixo de caixas
+            </div>
+            <div style="background: darkred; padding: 2rem; color: white; text-align: center; font-weight: bolder;">Sou
+                uma caixa, uma tag
+                div, e tenho um pai com display: block;
+            </div>
+            <div style="background: darkorange; padding: 2rem; color: white; text-align: center; font-weight: bolder;">
+                Sou
+                outra caixa, uma outra tag div, e tenho um pai com display: block;
+            </div>
+            <div
+                style="float: right; background: steelblue; width: 40%; padding: 2rem; color: white; text-align: center; font-weight: bolder;">
+                ...mas eu sou diferente, uso uso float: right; portanto eu consigo forçar a barra e ficar na direita,
+                lado a lado de outra caixa
+                quem manda sou eu
+            </div>
+            <div
+                style="background: darkslategray; width: 40%; padding: 2rem; color: white; text-align: center; font-weight: bolder;">
+                Sou a mesma coisa que os anteriores
+                e mesmo que eu tivesse uma largura menor como essa, que na teoria coubessem 2 caixas na mesma linha...
+            </div>
+            <div
+                style="background: darkslateblue; width: 40%; padding: 2rem; color: white; text-align: center; font-weight: bolder;">
+                ...nosso pai não deixaria a gente ficar lado a lado, pois ele é display block .___.
+            </div>
+        </div>
+
+        <h2>Display Inline - Exemplo de Uso sozinho e com float</h2>
+        <p>Já o display inline; permite o posicionamento das caixas filhas de forma a ficarem <b><em>em linha.</em></b>
+            Tanto do texto, quanto outras tags com o mesmo display:
+        </p>
+        <div style="background: slateblue; padding: 2rem;">
+            <div style="display: inline; color: white;">
+                Sou um simples texto, <a style="color: white;" href="#">e eu sou um texto dentro de um link,</a>
+                entende? Por isso nós existimos, principalmente pra permitir com que certas tags (principalmente de
+                texto) sejam colocadas em linha...
+            </div>
+        </div>
+        <div style="background: seagreen; padding: 2rem;">
+            <div style="display: block; color: white;">
+                ...Coisa impossível, ou mega difícil, <a style="color: white; display: block;" href="#">de se fazer
+                    usando display:
+                    block; (que é esse exemplo em verde suave)</a>
+            </div>
+        </div>
+        <div style="background: firebrick; padding: 2rem;">
+            <div style="display: inline; color: white;">
+                Agora que você já sabe +- a diferença entre o inline e o block; aqui está o exemplo de uso do inline com
+                float:
+                <a style="color: white; float: right;" href="#">Wow, sou um texto dentro de uma tag link e com float
+                    right</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4 style="text-align: center; padding: 2rem; color: white;">Isso é tudo pessoal</h4>
+    </footer>
+</body>
+
+</html>
