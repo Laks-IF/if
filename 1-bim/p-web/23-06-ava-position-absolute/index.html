@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute e Position Relative e Formatação de Links</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            text-decoration: none;
+        }
+
+        a {
+            transition: all .2s ease-in-out;
+            color: blue;
+            padding: 1rem 2rem;
+            font-size: 1.3em;
+        }
+
+        a:hover {
+            background: yellow;
+        }
+
+        a:active {
+            background: gold;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        .menu {
+            text-align: center;
+
+            padding: 1rem 2rem;
+        }
+
+        .container {
+            margin: 2rem auto;
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box {
+            color: #fff;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+
+        .box-1 {
+            top: 0;
+            left: 0;
+
+            background: black;
+        }
+
+        .box-2 {
+            bottom: -50%;
+            left: 50%;
+            background: red;
+
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .box-3 {
+            top: 0;
+            left: 125%;
+            background: blue;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="menu">
+        <a href="#">CNN</a>|
+        <a href="#">YOUTUBE</a>|
+        <a href="#">AMAZON</a>|
+        <a href="#">MERCADO LIVRE</a>
+    </section>
+
+    <div class="container">
+        <div class="box box-1">Elemento 1</div>
+        <div class="box box-2">Elemento 2</div>
+        <div class="box box-3">Elemento 3</div>
+    </div>
+
+</body>
+
+</html>
