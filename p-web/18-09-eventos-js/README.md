@@ -4,6 +4,8 @@ Trabalho de implementar alguns exemplos de eventos usando Javascript. Peguei o e
 - onresize
 - onmousemove
 
+### O que cada evento faz
+
 - O evento resize dá um lagzinho na aba
 - O evento click dá um ataque epiléptico
 - O evento onmousemove pinta a tela usando um canvas  
