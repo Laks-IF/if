@@ -6,8 +6,8 @@ Trabalho de implementar alguns exemplos de eventos usando Javascript. Peguei o e
 
 ### O que cada evento faz
 
-- O evento resize dá um lagzinho na aba
-- O evento click troca a cor do body a cada 5 milisegundos
-- O evento onmousemove pinta a tela usando um canvas  
+- O evento resize reinicia o tamanho do canvas
+- O evento click troca a cor do body
+- O evento onmousemove pinta a tela usando o canvas  
 
-Nada deve fazer sentido, só fiz isso pra brincar, assim o trabalho sai um pouco do padrão que o professor tá acostumado a ver
+Eventos utilizados apenas para fins de demonstração do uso.
