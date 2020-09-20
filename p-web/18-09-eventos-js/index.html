@@ -1,105 +1,122 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Eventos em Javascript</title>
-	<style type="text/css">
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-		html {
-			width: 100%;
-			height: 100%;
-		}
-		body {
-			width: 100%;
-			height: 100%;
+  <head>
+    <title>Eventos em Javascript</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		#a{
-			width: 100%;
-			height: 100%;
+      html {
+        width: 100%;
+        height: 100%;
+      }
 
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: -1;
-		}
-	</style>
-</head>
-<body>
-	<button onclick="noclick()">Não clica em mim se tiver eplepsia</button>
-	<p>Não dá resize na janela por favor</p>
-	<canvas id="a"></canvas>
-	<script type="text/javascript">
-		var p = "<p>Não dá resize na janela por favor</p>";
+      body {
+        width: 100%;
+        height: 100%;
 
-		var canvas = document.getElementById("a");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-		canvas.width = innerWidth;
-		canvas.height = innerHeight;
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
 
-		var ctx = canvas.getContext("2d");
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button onclick="changeColor()">Mudar cor do background</button>
+    </div>
 
-		function getRandomColor(){
-			let [r,g,b] = [randomInt(0,255),randomInt(0,255),randomInt(0,255)];
+    <canvas></canvas>
 
-			return `rgb(${r}, ${g}, ${b})`;
-		}
-		let size = 20;
-		let coef = 1;
+    <script type="text/javascript">
+      var canvas = document.querySelector("canvas");
+      var ctx = canvas.getContext("2d");
 
-		document.body.onpointermove = e => {
-			var [x,y] = [e.clientX, e.clientY];
+      setCanvasSize();
 
-			ctx.beginPath();
+      // =======================================
+      // UTILS
+      // =======================================
+      function setCanvasSize() {
+        canvas.width = innerWidth;
+        canvas.height = innerHeight;
+      }
 
-			if(size > 300){
-				coef = -1;
-			}else if(size < 5){
-				coef = 1;
-			}
+      function randomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
 
-			ctx.fillStyle=  getRandomColor();
+      function getRandomColor() {
+        let [r, g, b] = [
+          randomInt(0, 255),
+          randomInt(0, 255),
+          randomInt(0, 255),
+        ];
 
-			ctx.rect(x - size / 2,y - size / 2, size, size);
+        return `rgb(${r}, ${g}, ${b})`;
+      }
 
-			ctx.fill();
+      // =======================================
+      // EVENTOS
+      // =======================================
 
-			size+= coef;
-		}
+      // N°1
+      // EVENTO: ONRESIZE
+      // TARGET: GLOBAL WINDOW
+      window.onresize = () => {
+        setCanvasSize();
+      };
 
-		var arr = Array.from({length: 1000});
+      // N°2
+      // EVENTO: ONCLICK
+      // TARGET: BUTTON
+      document.querySelector("button").onclick = function () {
+        document.body.style.background = getRandomColor();
+      };
 
-		arr.forEach(() => {
-			window.addEventListener("resize", () => {
-				for(var _ of arr){
-					kaka();
-				}
-			});
+      // N°3
+      // EVENTO: ONPOINTERMOVE
+      // TARGET: BODY
 
-			function kaka(){
-				document.body.innerHTML += p;
-			}
-		})
+      // nota: o evento apesar de modificar o elemento <canvas>
+      // ele está sendo disparado pelo body, então o evento
+      // continua sendo do body
 
-		function randomInt(min, max) {
-		    return Math.floor(Math.random() * (max - min + 1) + min);
-		}
+      let size = 20;
+      let coef = 1;
 
-		function noclick(){
-			changeback();
-		}
+      document.body.onpointermove = (e) => {
+        var [x, y] = [e.clientX, e.clientY];
 
-		function changeback(){
-			document.body.style.background = getRandomColor();
+        ctx.beginPath();
 
-			setTimeout(changeback, 5);
-		}
-	</script>
-</body>
+        if (size > 300) {
+          coef = -1;
+        } else if (size < 5) {
+          coef = 1;
+        }
+
+        ctx.fillStyle = getRandomColor();
+
+        ctx.rect(x - size / 2, y - size / 2, size, size);
+
+        ctx.fill();
+
+        size += coef;
+      };
+    </script>
+  </body>
 </html>
