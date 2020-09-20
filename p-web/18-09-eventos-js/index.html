@@ -50,6 +50,10 @@
       // =======================================
       // UTILS
       // =======================================
+      var red = randomInt(0, 255);
+      var green = randomInt(0, 255);
+      var blue = randomInt(0, 255);
+
       function setCanvasSize() {
         canvas.width = innerWidth;
         canvas.height = innerHeight;
@@ -59,12 +63,36 @@
         return Math.floor(Math.random() * (max - min + 1) + min);
       }
 
+      function randomBool(){
+      	return randomInt(0, 1) === 1;
+      }
+
       function getRandomColor() {
-        let [r, g, b] = [
+        var [r, g, b] = [
           randomInt(0, 255),
           randomInt(0, 255),
           randomInt(0, 255),
         ];
+
+        return `rgb(${r}, ${g}, ${b})`;
+      }
+
+      function getRelatedColor() {
+      	red += randomInt(-20, 20);
+      	green += randomInt(-20, 20);
+      	blue += randomInt(-20, 20);
+
+      	red = red < 0 ? red + randomInt(10, 50) : red;
+      	green = green < 0 ? green + randomInt(10, 50) : green;
+      	blue = blue < 0 ? blue + randomInt(10, 50) : blue;
+
+      	red = red > 255 ? red + randomInt(-50, -10) : red;
+      	green = green > 255 ? green + randomInt(-50, -10) : green;
+      	blue = blue > 255 ? blue + randomInt(-50, -10) : blue;
+
+        var [r, g, b] = [red, green, blue];
+
+        colorCoef = randomInt(-10, 10);
 
         return `rgb(${r}, ${g}, ${b})`;
       }
@@ -95,8 +123,8 @@
       // ele está sendo disparado pelo body, então o evento
       // continua sendo do body
 
-      let size = 20;
-      let coef = 1;
+      var size = 20;
+      var coef = 1;
 
       document.body.onpointermove = (e) => {
         var [x, y] = [e.clientX, e.clientY];
@@ -109,7 +137,7 @@
           coef = 1;
         }
 
-        ctx.fillStyle = getRandomColor();
+        ctx.fillStyle = getRelatedColor();
 
         ctx.rect(x - size / 2, y - size / 2, size, size);
 
