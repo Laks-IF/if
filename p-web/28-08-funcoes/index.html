@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resolução</title>
+  </head>
+  <body>
+    <fieldset id="q1">
+      <legend>
+        1) Faça um programa que recebe dois números do usuário, e identifica o
+        maior através de uma função e imprima o resultado.
+      </legend>
+      <form>
+        <input type="number" min="0" name="n1" />
+        <input type="number" min="0" name="n2" />
+        <button>Calcular</button>
+      </form>
+      <pre></pre>
+    </fieldset>
+
+    <fieldset id="q2">
+      <legend>
+        2) Faça um programa que recebe três números do usuário, e identifica o
+        maior através de uma função e o menor número através de outra função
+      </legend>
+      <form>
+        <input type="number" min="0" name="n1" />
+        <input type="number" min="0" name="n2" />
+        <input type="number" min="0" name="n3" />
+        <button>Calcular</button>
+      </form>
+      <pre name="maior"></pre>
+      <pre name="menor"></pre>
+    </fieldset>
+
+    <fieldset id="q3">
+      <legend>
+        2) Faça um programa que recebe um número digitado pelo usuário e mostre
+        se esse número é ímpar ou par.
+      </legend>
+      <form>
+        <input type="number" min="0" />
+        <button>Calcular</button>
+      </form>
+      <pre></pre>
+    </fieldset>
+
+    <fieldset id="q4">
+      <legend>
+        2) Crie um código que o usuário deverá digitar dois números, primeiro o
+        dividendo, depois o divisor. Imprima na tela os números digitados
+        (dividendo e divisor), o resultado da operação e o resto se a fração não
+        for exata.
+      </legend>
+      <form>
+        <label for="dividendo">
+          Dividendo
+          <input type="number" min="0" name="dividendo" />
+        </label>
+        <label for="dividendo">
+          Divisor
+          <input type="number" min="0" name="divisor" />
+        </label>
+
+        <button>Calcular</button>
+      </form>
+      <pre></pre>
+    </fieldset>
+
+    <fieldset id="q5">
+      <legend>
+        2) Crie um botão em html que ao ser clicado, chama uma função em
+        JavaScript que esteja em um arquivo externo e abre uma janela com a
+        mensagem “Disciplina: Programação Web”. Obs: Se a função JavaScript não
+        estiver em um arquivo externo, a questão não será considerada.
+      </legend>
+      <button>Click me!</button>
+    </fieldset>
+
+    <fieldset id="q6">
+      <legend>
+        2) Crie um botão em html que ao ser clicado, mostre um número aleatório
+        entre 0 e 100. Obs: Este não expliquei como fazer, justamente para que
+        vocês possam pesquisar.
+      </legend>
+      <button>Random number!</button>
+    </fieldset>
+
+    <script>
+      /* QUESTÃO 1 */
+      const q1 = document.querySelector("#q1 > form");
+      const q1_n1 = document.querySelector('#q1 > form > input[name="n1"]');
+      const q1_n2 = document.querySelector('#q1 > form > input[name="n2"]');
+      const q1_result = document.querySelector("#q1 > pre");
+
+      q1.addEventListener("submit", (event) => {
+        event.preventDefault();
+        q1_result.innerHTML = `O maior é ${maiorEntreDois(
+          q1_n1.value,
+          q1_n2.value
+        )}`;
+      });
+
+      function maiorEntreDois(n1, n2) {
+        n1 = Number(n1);
+        n2 = Number(n2);
+
+        return n1 > n2 ? n1 : n2;
+      }
+
+      function maiorEntreTres(n1, n2, n3) {
+        n1 = Number(n1);
+        n2 = Number(n2);
+        n3 = Number(n3);
+
+        if (n1 > n2) {
+          return n1;
+        } else if (n2 > n3) {
+          return n2;
+        } else if (n1 > n3) {
+          return n1;
+        } else {
+          return n3;
+        }
+      }
+
+      function menorEntreTres(n1, n2, n3) {
+        n1 = Number(n1);
+        n2 = Number(n2);
+        n3 = Number(n3);
+
+        if (n1 < n2) {
+          return n1;
+        } else if (n2 < n3) {
+          return n2;
+        } else if (n1 < n3) {
+          return n1;
+        } else {
+          return n3;
+        }
+      }
+
+      /* QUESTÃO 2 */
+      const q2 = document.querySelector("#q2 > form");
+      const q2_n1 = document.querySelector('#q2 > form > input[name="n1"]');
+      const q2_n2 = document.querySelector('#q2 > form > input[name="n2"]');
+      const q2_n3 = document.querySelector('#q2 > form > input[name="n3"]');
+      const q2_result = document.querySelector('#q2 > pre[name="maior"]');
+      const q2_result2 = document.querySelector('#q2 > pre[name="menor"]');
+
+      q2.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        q2_result.innerHTML = `O maior é ${maiorEntreTres(
+          q2_n1.value,
+          q2_n2.value,
+          q2_n3.value
+        )}`;
+        q2_result2.innerHTML = `O menor é ${menorEntreTres(
+          q2_n1.value,
+          q2_n2.value,
+          q2_n3.value
+        )}`;
+      });
+
+      /* QUESTÃO 3 */
+      const q3 = document.querySelector("#q3 > form");
+      const q3_n1 = document.querySelector("#q3 > form > input");
+      const q3_result = document.querySelector("#q3 > pre");
+
+      function imparOuPar(n1) {
+        n1 = Number(n1);
+
+        if (n1 % 2 === 0) {
+          return "Par";
+        } else {
+          return "Ímpar";
+        }
+      }
+
+      q3.addEventListener("submit", (e) => {
+        e.preventDefault();
+        q3_result.innerHTML = imparOuPar(q3_n1.value);
+      });
+
+      /* QUESTÃO 4 */
+      const q4 = document.querySelector("#q4 > form");
+      const q4_dividendo = document.querySelector(
+        '#q4 > form input[name="dividendo"]'
+      );
+
+      const q4_divisor = document.querySelector(
+        '#q4 > form input[name="divisor"]'
+      );
+
+      const q4_result = document.querySelector("#q4 > pre");
+
+      function realizarOperacao(dividendo, divisor) {
+        const valor = Math.round(dividendo / divisor);
+
+        return `Dividendo: ${dividendo}
+          Divisor: ${divisor}
+          Resultado: ${valor}
+          ${dividendo % divisor > 0 ? `Resto: ${dividendo % divisor}` : ``}
+          `;
+      }
+
+      q4.addEventListener("submit", (e) => {
+        e.preventDefault();
+        q4_result.innerHTML = realizarOperacao(
+          q4_dividendo.value,
+          q4_divisor.value
+        );
+      });
+
+      /* QUESTÃO 5 */
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>
